@@ -59,7 +59,7 @@ const Feed = () => {
     <Layout className='min-h-[600px] bg-black text-white' >
       <Sider 
        breakpoint='sm'
-       
+       className='h-screen'
       >
         <Menu className='bg-black' theme='dark'
          mode="inline" 
@@ -79,7 +79,7 @@ const Feed = () => {
          <h1 className='text-red-600 text-[30px] font-bold'><span className='text-white'> {selected} </span> Videos</h1>
           </Header>
         <Content className='bg-black text-white'>
-            <Videos videos={videos}/>
+            <Videos videos={videos} />
         </Content>
       </Layout>
     </Layout>
